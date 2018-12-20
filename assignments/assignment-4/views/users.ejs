@@ -1,0 +1,14 @@
+<%- include('partials/head.ejs') %>
+</head>
+
+<body>
+    <main>
+        <h2>Users</h2>
+        <ul>
+            <% for (let user of usersList) { %>
+                <li><%= user.user %></li>
+            <% } %> 
+        </ul>
+    </main>
+
+<%- include('partials/end.ejs') %>
